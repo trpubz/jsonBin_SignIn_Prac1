@@ -24,8 +24,24 @@ struct ContentView: View {
                     .frame(width: 100, height: 100)
                 Spacer()
                 Spacer()
-                TextField("Choose a username", text: $username)
-                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                VStack(alignment: .leading, spacing: 15) {
+                    TextField("Choose a username", text: $username)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        .frame(width: 200, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    HStack {
+                        Button("Check Username") {
+                            
+                        }
+                        .padding()
+                        .background(Rectangle().fill(Color.white).cornerRadius(10))
+                        
+                        .buttonStyle(DefaultButtonStyle())
+                        Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
+                    }
+                    
+                }
+                .padding()
                 Spacer()
                 Spacer()
             }

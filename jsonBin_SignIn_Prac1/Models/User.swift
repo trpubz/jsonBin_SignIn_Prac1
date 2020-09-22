@@ -29,10 +29,9 @@ extension UserStore {
         AF.request(j.usersURL, headers: j.headers).validate().responseJSON { response in
             //debugPrint(response)
             switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                let match = json.first(where: {$1["username"] == "test"})
-                print(match?.1["id"])
+            case .success:
+                let usrs: [User] = try! JSONDecoder().decode([User].self, from: response.data!)
+                print(usrs.filter({$0.username == "test"}))
             case .failure(let error):
                 print(error)
             }
