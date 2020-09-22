@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AE1B20E890D0ECE5661889A /* Pods_jsonBin_SignIn_Prac1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A928178A21F31939C7D556 /* Pods_jsonBin_SignIn_Prac1.framework */; };
 		B3C97AE32517EA990082F113 /* jsonBin_SignIn_Prac1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C97AE22517EA990082F113 /* jsonBin_SignIn_Prac1App.swift */; };
 		B3C97AE52517EA990082F113 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C97AE42517EA990082F113 /* ContentView.swift */; };
 		B3C97AE72517EA9A0082F113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C97AE62517EA9A0082F113 /* Assets.xcassets */; };
 		B3C97AEA2517EA9A0082F113 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C97AE92517EA9A0082F113 /* Preview Assets.xcassets */; };
+		B3C97AF32517EDA80082F113 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C97AF22517EDA80082F113 /* User.swift */; };
+		B3C97AF72518465B0082F113 /* JB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C97AF62518465B0082F113 /* JB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7170B378028D7F2C3DC251CC /* Pods-jsonBin_SignIn_Prac1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jsonBin_SignIn_Prac1.release.xcconfig"; path = "Target Support Files/Pods-jsonBin_SignIn_Prac1/Pods-jsonBin_SignIn_Prac1.release.xcconfig"; sourceTree = "<group>"; };
+		8B4DAE674947CCC8ED3C1DF9 /* Pods-jsonBin_SignIn_Prac1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jsonBin_SignIn_Prac1.debug.xcconfig"; path = "Target Support Files/Pods-jsonBin_SignIn_Prac1/Pods-jsonBin_SignIn_Prac1.debug.xcconfig"; sourceTree = "<group>"; };
 		B3C97ADF2517EA990082F113 /* jsonBin_SignIn_Prac1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jsonBin_SignIn_Prac1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C97AE22517EA990082F113 /* jsonBin_SignIn_Prac1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonBin_SignIn_Prac1App.swift; sourceTree = "<group>"; };
 		B3C97AE42517EA990082F113 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3C97AE62517EA9A0082F113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C97AE92517EA9A0082F113 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3C97AEB2517EA9A0082F113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C97AF22517EDA80082F113 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B3C97AF62518465B0082F113 /* JB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JB.swift; sourceTree = "<group>"; };
+		D7A928178A21F31939C7D556 /* Pods_jsonBin_SignIn_Prac1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jsonBin_SignIn_Prac1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE1B20E890D0ECE5661889A /* Pods_jsonBin_SignIn_Prac1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A109BDB18280223489FFA286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B4DAE674947CCC8ED3C1DF9 /* Pods-jsonBin_SignIn_Prac1.debug.xcconfig */,
+				7170B378028D7F2C3DC251CC /* Pods-jsonBin_SignIn_Prac1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B3C97AD62517EA990082F113 = {
 			isa = PBXGroup;
 			children = (
 				B3C97AE12517EA990082F113 /* jsonBin_SignIn_Prac1 */,
 				B3C97AE02517EA990082F113 /* Products */,
+				A109BDB18280223489FFA286 /* Pods */,
+				FBD11482DBF78596CDB88798 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C97AE22517EA990082F113 /* jsonBin_SignIn_Prac1App.swift */,
+				B3C97AF5251846410082F113 /* Models */,
 				B3C97AE42517EA990082F113 /* ContentView.swift */,
 				B3C97AE62517EA9A0082F113 /* Assets.xcassets */,
 				B3C97AEB2517EA9A0082F113 /* Info.plist */,
@@ -69,6 +90,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B3C97AF5251846410082F113 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3C97AF22517EDA80082F113 /* User.swift */,
+				B3C97AF62518465B0082F113 /* JB.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBD11482DBF78596CDB88798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7A928178A21F31939C7D556 /* Pods_jsonBin_SignIn_Prac1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3C97AEE2517EA9A0082F113 /* Build configuration list for PBXNativeTarget "jsonBin_SignIn_Prac1" */;
 			buildPhases = (
+				FC9E377C40B53BC13A4FD8CD /* [CP] Check Pods Manifest.lock */,
 				B3C97ADB2517EA990082F113 /* Sources */,
 				B3C97ADC2517EA990082F113 /* Frameworks */,
 				B3C97ADD2517EA990082F113 /* Resources */,
+				E63337F3045B728ABEF21EA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +173,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E63337F3045B728ABEF21EA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jsonBin_SignIn_Prac1/Pods-jsonBin_SignIn_Prac1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jsonBin_SignIn_Prac1/Pods-jsonBin_SignIn_Prac1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jsonBin_SignIn_Prac1/Pods-jsonBin_SignIn_Prac1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9E377C40B53BC13A4FD8CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jsonBin_SignIn_Prac1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3C97ADB2517EA990082F113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +222,8 @@
 			files = (
 				B3C97AE52517EA990082F113 /* ContentView.swift in Sources */,
 				B3C97AE32517EA990082F113 /* jsonBin_SignIn_Prac1App.swift in Sources */,
+				B3C97AF32517EDA80082F113 /* User.swift in Sources */,
+				B3C97AF72518465B0082F113 /* JB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +348,7 @@
 		};
 		B3C97AEF2517EA9A0082F113 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B4DAE674947CCC8ED3C1DF9 /* Pods-jsonBin_SignIn_Prac1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +371,7 @@
 		};
 		B3C97AF02517EA9A0082F113 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7170B378028D7F2C3DC251CC /* Pods-jsonBin_SignIn_Prac1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

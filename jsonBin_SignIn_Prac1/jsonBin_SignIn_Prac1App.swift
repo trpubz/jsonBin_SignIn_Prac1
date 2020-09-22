@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct jsonBin_SignIn_Prac1App: App {
+    @StateObject var user = UserStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(username: $user.usr.username, textField: "")
         }
     }
 }
