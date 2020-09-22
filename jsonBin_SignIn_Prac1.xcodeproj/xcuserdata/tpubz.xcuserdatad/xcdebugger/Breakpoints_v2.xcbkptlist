@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BC56FE31-1DFA-4A5A-9237-2BC7D9DA1EC8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "765123E8-9D49-45CD-848A-96FFD7CF1502"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jsonBin_SignIn_Prac1/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E6CE8AD-E401-45D5-8636-D610E48FFD30"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jsonBin_SignIn_Prac1/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ContentView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "5E6CE8AD-E401-45D5-8636-D610E48FFD30 - 43f70622ec453c3a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jsonBin_SignIn_Prac1.ContentView.username.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "jsonBin_SignIn_Prac1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tpubz/Documents/_coding/Prac/jsonBin_SignIn_Prac1/jsonBin_SignIn_Prac1/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "237">
+               </Location>
+               <Location
+                  uuid = "5E6CE8AD-E401-45D5-8636-D610E48FFD30 - 151b594236f4ec36"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jsonBin_SignIn_Prac1.ContentView.username.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "jsonBin_SignIn_Prac1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tpubz/Documents/_coding/Prac/jsonBin_SignIn_Prac1/jsonBin_SignIn_Prac1/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "241">
+               </Location>
+               <Location
+                  uuid = "5E6CE8AD-E401-45D5-8636-D610E48FFD30 - bc360e67b45c194e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jsonBin_SignIn_Prac1.ContentView.username.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "jsonBin_SignIn_Prac1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tpubz/Documents/_coding/Prac/jsonBin_SignIn_Prac1/jsonBin_SignIn_Prac1/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "5E6CE8AD-E401-45D5-8636-D610E48FFD30 - 1e71363fba8df943"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jsonBin_SignIn_Prac1.ContentView.username.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "jsonBin_SignIn_Prac1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tpubz/Documents/_coding/Prac/jsonBin_SignIn_Prac1/jsonBin_SignIn_Prac1/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5E6CE8AD-E401-45D5-8636-D610E48FFD30 - 2db0e0c160cb31af"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jsonBin_SignIn_Prac1.ContentView.$username.getter : SwiftUI.Binding&lt;Swift.Optional&lt;Swift.String&gt;&gt;"
+                  moduleName = "jsonBin_SignIn_Prac1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tpubz/Documents/_coding/Prac/jsonBin_SignIn_Prac1/jsonBin_SignIn_Prac1/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
