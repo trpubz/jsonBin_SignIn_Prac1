@@ -15,10 +15,12 @@ class UserStore: ObservableObject {
     
     init() {
         
-        self.usr = User(username: "", id: "", email: "")
-        pullUserList()
+        self.usr = User(username: "", id: "")
         
-        self.usr.username = UserDefaults.standard.string(forKey: "username") ?? ""
+        
+        if UserDefaults.standard.string(forKey: "username") == nil {
+            print("no such user defaults exist")
+        }
 
     }
 }
@@ -31,7 +33,12 @@ extension UserStore {
             switch response.result {
             case .success:
                 let usrs: [User] = try! JSONDecoder().decode([User].self, from: response.data!)
-                print(usrs.filter({$0.username == "test"}))
+                if usrs.contains(where: {$0.username == self.usr.username.lowercased()}) {
+                    print("ut oh, no duplicates")
+                } else {
+                    print("nobody else has that username")
+                }
+                
             case .failure(let error):
                 print(error)
             }
@@ -43,7 +50,7 @@ struct User: Codable {
     var username: String
     var id: String
     var email: String = ""
-    
+    var name: String = ""
 }
 
 extension User {

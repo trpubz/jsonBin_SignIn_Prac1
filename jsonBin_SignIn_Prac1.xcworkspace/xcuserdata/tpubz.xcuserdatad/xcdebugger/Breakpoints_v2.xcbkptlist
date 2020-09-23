@@ -14,8 +14,8 @@
             filePath = "jsonBin_SignIn_Prac1/Models/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "pullUserList()"
             landmarkType = "7">
          </BreakpointContent>

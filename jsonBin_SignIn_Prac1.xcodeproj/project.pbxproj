@@ -51,6 +51,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B37BC13D2519B1D800995E2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3C97AE42517EA990082F113 /* ContentView.swift */,
+				B37BC13E2519B1E700995E2C /* OnBoardingViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B37BC13E2519B1E700995E2C /* OnBoardingViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoardingViews;
+			sourceTree = "<group>";
+		};
 		B3C97AD62517EA990082F113 = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				B3C97AE22517EA990082F113 /* jsonBin_SignIn_Prac1App.swift */,
+				B37BC13D2519B1D800995E2C /* Views */,
 				B3C97AF5251846410082F113 /* Models */,
-				B3C97AE42517EA990082F113 /* ContentView.swift */,
 				B3C97AE62517EA9A0082F113 /* Assets.xcassets */,
 				B3C97AEB2517EA9A0082F113 /* Info.plist */,
 				B3C97AE82517EA9A0082F113 /* Preview Content */,

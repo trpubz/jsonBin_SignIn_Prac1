@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @Binding var username: String
     @State var textField: String
+    @EnvironmentObject var user: UserStore
     
     var body: some View {
         ZStack {
@@ -17,6 +18,7 @@ struct ContentView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .scaledToFill()
+                
             VStack {
                 Spacer()
                 Image("logo")
@@ -28,20 +30,24 @@ struct ContentView: View {
                     TextField("Choose a username", text: $username)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         
-                        .frame(width: 200, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
                     HStack {
                         Button("Check Username") {
-                            
+                            user.pullUserList()
                         }
-                        .padding()
-                        .background(Rectangle().fill(Color.white).cornerRadius(10))
+                        .padding(10)
+                        .background(Rectangle().fill(Color.white).cornerRadius(5))
                         
                         .buttonStyle(DefaultButtonStyle())
+                        Spacer()
                         Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
                     }
                     
+                    
                 }
-                .padding()
+                    .padding()
+                    .frame(width: 250)
                 Spacer()
                 Spacer()
             }
