@@ -29,13 +29,14 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 15) {
                     TextField("Choose a username", text: $username)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        
+                        .montserratFont()
                         .frame(height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                     HStack {
                         Button("Check Username") {
                             user.pullUserList()
                         }
+                        .montserratFont()
                         .padding(10)
                         .background(Rectangle().fill(Color.white).cornerRadius(5))
                         
