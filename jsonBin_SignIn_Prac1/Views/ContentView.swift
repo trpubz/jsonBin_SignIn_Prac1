@@ -28,7 +28,7 @@ struct ContentView: View {
                 Spacer()
                 VStack(alignment: .leading, spacing: 15) {
                     TextField("Choose a username", text: $username)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
                         .montserratFont()
                         .frame(height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
