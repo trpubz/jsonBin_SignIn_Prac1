@@ -193,6 +193,7 @@ public final class RevocationTrustEvaluator: ServerTrustEvaluating {
 /// pinning provides a very secure form of server trust validation mitigating most, if not all, MITM attacks.
 /// Applications are encouraged to always validate the host and require a valid certificate chain in production
 /// environments.
+@available(iOS 14.0, *)
 public final class PinnedCertificatesTrustEvaluator: ServerTrustEvaluating {
     private let certificates: [SecCertificate]
     private let acceptSelfSignedCertificates: Bool
@@ -256,6 +257,7 @@ public final class PinnedCertificatesTrustEvaluator: ServerTrustEvaluating {
 /// public key pinning provides a very secure form of server trust validation mitigating most, if not all, MITM attacks.
 /// Applications are encouraged to always validate the host and require a valid certificate chain in production
 /// environments.
+@available(iOS 14.0, *)
 public final class PublicKeysTrustEvaluator: ServerTrustEvaluating {
     private let keys: [SecKey]
     private let performDefaultValidation: Bool
@@ -377,6 +379,7 @@ public extension Array where Element == ServerTrustEvaluating {
 }
 
 extension Bundle: AlamofireExtended {}
+@available(iOS 14.0, *)
 public extension AlamofireExtension where ExtendedType: Bundle {
     /// Returns all valid `cer`, `crt`, and `der` certificates in the bundle.
     var certificates: [SecCertificate] {
@@ -501,6 +504,7 @@ public extension AlamofireExtension where ExtendedType == SecTrust {
     }
 
     /// The public keys contained in `self`.
+    @available(iOS 14.0, *)
     var publicKeys: [SecKey] {
         certificates.af.publicKeys
     }
@@ -585,6 +589,7 @@ public extension AlamofireExtension where ExtendedType == [SecCertificate] {
     }
 
     /// All public `SecKey` values for the contained `SecCertificate`s.
+    @available(iOS 14.0, *)
     var publicKeys: [SecKey] {
         type.compactMap { $0.af.publicKey }
     }
@@ -593,6 +598,7 @@ public extension AlamofireExtension where ExtendedType == [SecCertificate] {
 extension SecCertificate: AlamofireExtended {}
 public extension AlamofireExtension where ExtendedType == SecCertificate {
     /// The public key for `self`, if it can be extracted.
+    @available(iOS 14.0, *)
     var publicKey: SecKey? {
         let policy = SecPolicyCreateBasicX509()
         var trust: SecTrust?
