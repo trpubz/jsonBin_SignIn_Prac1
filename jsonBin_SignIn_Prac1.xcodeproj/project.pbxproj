@@ -19,6 +19,8 @@
 		25FF7078251C400600D118B8 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25FF7073251C400600D118B8 /* Montserrat-Light.ttf */; };
 		25FF707C251C42A000D118B8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF707B251C42A000D118B8 /* Fonts.swift */; };
 		8AE1B20E890D0ECE5661889A /* Pods_jsonBin_SignIn_Prac1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A928178A21F31939C7D556 /* Pods_jsonBin_SignIn_Prac1.framework */; };
+		B3135814251EF9CE00424594 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3135813251EF9CE00424594 /* Colors.swift */; };
+		B3135819251EFA7000424594 /* TextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3135818251EFA7000424594 /* TextBoxView.swift */; };
 		B3C97AE32517EA990082F113 /* jsonBin_SignIn_Prac1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C97AE22517EA990082F113 /* jsonBin_SignIn_Prac1App.swift */; };
 		B3C97AE52517EA990082F113 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C97AE42517EA990082F113 /* ContentView.swift */; };
 		B3C97AE72517EA9A0082F113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C97AE62517EA9A0082F113 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		25FF707B251C42A000D118B8 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		7170B378028D7F2C3DC251CC /* Pods-jsonBin_SignIn_Prac1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jsonBin_SignIn_Prac1.release.xcconfig"; path = "Target Support Files/Pods-jsonBin_SignIn_Prac1/Pods-jsonBin_SignIn_Prac1.release.xcconfig"; sourceTree = "<group>"; };
 		8B4DAE674947CCC8ED3C1DF9 /* Pods-jsonBin_SignIn_Prac1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jsonBin_SignIn_Prac1.debug.xcconfig"; path = "Target Support Files/Pods-jsonBin_SignIn_Prac1/Pods-jsonBin_SignIn_Prac1.debug.xcconfig"; sourceTree = "<group>"; };
+		B3135813251EF9CE00424594 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B3135818251EFA7000424594 /* TextBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxView.swift; sourceTree = "<group>"; };
 		B3C97ADF2517EA990082F113 /* jsonBin_SignIn_Prac1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jsonBin_SignIn_Prac1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C97AE22517EA990082F113 /* jsonBin_SignIn_Prac1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonBin_SignIn_Prac1App.swift; sourceTree = "<group>"; };
 		B3C97AE42517EA990082F113 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				25FF707B251C42A000D118B8 /* Fonts.swift */,
+				B3135813251EF9CE00424594 /* Colors.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -96,6 +101,14 @@
 				7170B378028D7F2C3DC251CC /* Pods-jsonBin_SignIn_Prac1.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3135817251EFA5C00424594 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				B3135818251EFA7000424594 /* TextBoxView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		B37BC13D2519B1D800995E2C /* Views */ = {
@@ -111,6 +124,7 @@
 		B37BC13E2519B1E700995E2C /* OnBoardingViews */ = {
 			isa = PBXGroup;
 			children = (
+				B3135817251EFA5C00424594 /* SubViews */,
 			);
 			path = OnBoardingViews;
 			sourceTree = "<group>";
@@ -296,8 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C97AE52517EA990082F113 /* ContentView.swift in Sources */,
+				B3135814251EF9CE00424594 /* Colors.swift in Sources */,
 				25FF707C251C42A000D118B8 /* Fonts.swift in Sources */,
 				B3C97AE32517EA990082F113 /* jsonBin_SignIn_Prac1App.swift in Sources */,
+				B3135819251EFA7000424594 /* TextBoxView.swift in Sources */,
 				B3C97AF32517EDA80082F113 /* User.swift in Sources */,
 				B3C97AF72518465B0082F113 /* JB.swift in Sources */,
 			);

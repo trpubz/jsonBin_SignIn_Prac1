@@ -27,11 +27,7 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 VStack(alignment: .leading, spacing: 15) {
-                    TextField("Choose a username", text: $username)
-                        
-                        .montserratFont()
-                        .frame(height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
+                    TextBoxView(username: $username)
                     HStack {
                         Button("Check Username") {
                             user.pullUserList()
