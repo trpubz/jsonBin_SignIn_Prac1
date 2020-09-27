@@ -48,6 +48,7 @@ extension UserStore {
 
 struct User: Codable {
     var username: String
+    var password: String = ""
     var id: String
     var email: String = ""
     var name: String = ""

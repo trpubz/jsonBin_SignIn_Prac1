@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var username: String
-    @State var textField: String
     @EnvironmentObject var user: UserStore
     
     var body: some View {
@@ -27,10 +25,10 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 VStack(alignment: .leading, spacing: 15) {
-                    TextBoxView(username: $username)
+                    OnBoardingUsername()
                     HStack {
                         Button("Check Username") {
-                            user.pullUserList()
+                            self.user.pullUserList()
                         }
                         .montserratFont()
                         .padding(10)
@@ -55,6 +53,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(username: .constant(""), textField: "")
+        ContentView()
     }
 }

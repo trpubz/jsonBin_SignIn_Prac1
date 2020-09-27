@@ -13,7 +13,7 @@ struct jsonBin_SignIn_Prac1App: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(username: $user.usr.username, textField: "")
+            ContentView()
                 .environmentObject(user)
         }
     }
