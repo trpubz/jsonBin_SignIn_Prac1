@@ -13,7 +13,7 @@ struct jsonBin_SignIn_Prac1App: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnBoardingUsername()
                 .environmentObject(user)
         }
     }

@@ -11,12 +11,17 @@ struct OnBoardingUsername: View {
     @EnvironmentObject var usr: UserStore
     
     var body: some View {
-        VStack(spacing: 26) {
+        VStack {
+            Image("logo")
+                .resizable()
+                .frame(width: 100, height: 100)
+                .padding(50)
+            
             OnBoardingTextBoxView(box: "Username", link: $usr.usr.username)
             
             OnBoardingTextBoxView(box: "Email", link: $usr.usr.email)
             
-            OnBoardingSecure(box: "Password", link: $usr.usr.password)
+            OnBoardingSecure(link: $usr.usr.password)
             
             
         }
