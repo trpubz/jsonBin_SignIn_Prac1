@@ -8,7 +8,6 @@
 import Foundation
 import Combine
 import Alamofire
-import SwiftyJSON
 
 class UserStore: ObservableObject {
     @Published var usr: User
